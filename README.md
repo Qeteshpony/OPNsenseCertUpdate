@@ -1,5 +1,6 @@
 # Automatic OPNsense Certificate Update
 I use an external server to generate Lets Encrypt wildcard certificates for my internally used domain
+
 These scripts help replacing the certificate in OPNsense without using the WEB-UI by encoding the certificate files
 and replacing the elements in the config.xml
 
