@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-
+import os
 import xml.etree.ElementTree as ETree
 import time
 import shutil
@@ -53,6 +53,9 @@ def main():
 
     # write the encoded certificate to the config
     replace_in_xml(certname, crt, prv)
+
+    # write log entry
+    os.system('logger -t certupdate "UI-Certficiate updated"')
 
 
 if __name__ == "__main__":
