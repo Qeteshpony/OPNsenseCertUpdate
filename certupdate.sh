@@ -4,7 +4,7 @@ scp user@host:path/fullchain.pem /root/
 scp user@host:path/privkey.pem /root/
 
 # update the config
-/root/OPNsenseCertUpdate.py
+/usr/bin/env python3 /root/OPNsenseCertUpdate.py
 
 # restart Web UI
 /usr/local/etc/rc.restart_webgui
